@@ -1,6 +1,6 @@
 BASIC TUTORIAL FOR USING GITHUB VIA TERMINAL (MAC) or GITBASH
 
-(1) Download (clone) the relevant repository (repo) to your computer: 
+(A) Download (clone) the relevant repository (repo) to your computer: 
     -Navigate to desired repo on GitHub.com
     -Click the green 'clone or download button' and copy the URL
     -Open terminal
@@ -12,7 +12,7 @@ BASIC TUTORIAL FOR USING GITHUB VIA TERMINAL (MAC) or GITBASH
     -Press ENTER 
     -The repo clone is now downloaded; you can edit the files as desired, but these edits will only affect the real repo if you update it properly.
 
-(2) Update GitHub repo:
+(B) Update GitHub repo:
     -To add these changes to a commit (i.e., put them 'on deck' to update GitHub repo), type
 
         git add FILENAME (type the name of the changed file w/out quotes here)
@@ -26,12 +26,27 @@ BASIC TUTORIAL FOR USING GITHUB VIA TERMINAL (MAC) or GITBASH
 
         git push
 
-(3) To pull (i.e., add) changes from the real GitHub repository to your clone, type
+(C) To pull (i.e., add) changes from the real GitHub repository to your clone, type
 
         git pull
 
-(4) At any time, you can check the status of your clone repository by typing 
+(D) At any time, you can check the status of your clone repository by typing 
 
         git status
 
     This will output the ways in which your clone differs from the real repository, along with other details. 
+
+(E) To see all git commands, type git
+
+(F) RECOMMENDED WORKFLOW:
+    (1) Start the work session by updating your clone with recent changes (i.e., git pull)
+    (2) Change, add, commit, push incrementally, as you change the file 
+        AVOID MAKING TOO MANY CHANGES BEFORE UPDATING
+
+(G) Handling merge conflicts:
+    -when two users try to push a change of the same line of code, a merge conflict will occur, beacuse the program doesn't know which change is the correct one. 
+    -if you are attempting to push the conclicting change, you will be forced to 'resolve the conflict' before you can successfully merge your changes with the repo.
+    -to do this, simply find the line at issue, and delete the undesired stuff, leaving only the line that should be kept. 
+    -then re-add, commit and push the changes. 
+
+
