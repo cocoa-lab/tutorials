@@ -1,0 +1,37 @@
+BASIC TUTORIAL FOR USING GITHUB VIA TERMINAL (MAC) or GITBASH
+
+(1) Download (clone) the relevant repository (repo) to your computer: 
+    -Navigate to desired repo on GitHub.com
+    -Click the green 'clone or download button' and copy the URL
+    -Open terminal
+    -Navigate to where you would like to put the repo
+    -Type 
+
+        git clone "URL" (type the actual URL here)
+
+    -Press ENTER 
+    -The repo clone is now downloaded; you can edit the files as desired, but these edits will only affect the real repo if you update it properly.
+
+(2) Update GitHub repo:
+    -To add these changes to a commit (i.e., put them 'on deck' to update GitHub repo), type
+
+        git add FILENAME (type the name of the changed file w/out quotes here)
+    OR  git add . (USE THIS TO READY UP CHANGES TO MANY FILES)  
+
+    -Then add a description of what was changed in this update by typing
+
+        git commit -m "MESSAGE" (type your message w/ quotes here)
+
+    -Then, to sync this commit with the GitHub repo, type
+
+        git push
+
+(3) To pull (i.e., add) changes from the real GitHub repository to your clone, type
+
+        git pull
+
+(4) At any time, you can check the status of your clone repository by typing 
+
+        git status
+
+    This will output the ways in which your clone differs from the real repository, along with other details. 
